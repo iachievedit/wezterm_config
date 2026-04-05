@@ -12,75 +12,75 @@ local citrus_neo = wezterm.color.get_builtin_schemes()["Builtin Solarized Dark"]
 
 -- Override everything with our Citrus Neo palette
 citrus_neo = {
-  -- Background: deep warm charcoal with a faint golden undertone
-  background = "#1a1a14",
+  -- Background: warm dark gold-brown, not black
+  background = "#242112",
 
-  -- Foreground: warm off-white, like the tinted keys on the Citrus model
-  foreground = "#f0ead6",
+  -- Foreground: warm cream, like sun-bleached keys
+  foreground = "#f2e8c9",
 
-  -- Cursor
-  cursor_bg = "#d4a017",
-  cursor_fg = "#1a1a14",
-  cursor_border = "#d4a017",
+  -- Cursor: bright juicy gold
+  cursor_bg = "#e8b312",
+  cursor_fg = "#242112",
+  cursor_border = "#e8b312",
 
-  -- Selection
-  selection_bg = "#3d3a2e",
-  selection_fg = "#f0ead6",
+  -- Selection: warm amber tint
+  selection_bg = "#4a4225",
+  selection_fg = "#f2e8c9",
 
   -- Scrollbar thumb
-  scrollbar_thumb = "#3d3a2e",
+  scrollbar_thumb = "#4a4225",
 
   -- Split (pane dividers)
-  split = "#5c5631",
+  split = "#6b6230",
 
   -- Tab bar
   tab_bar = {
-    background = "#13130e",
+    background = "#1b1908",
     active_tab = {
-      bg_color = "#1a1a14",
-      fg_color = "#d4a017",
+      bg_color = "#242112",
+      fg_color = "#e8b312",
       intensity = "Bold",
     },
     inactive_tab = {
-      bg_color = "#13130e",
-      fg_color = "#8a8470",
+      bg_color = "#1b1908",
+      fg_color = "#9a8d60",
     },
     inactive_tab_hover = {
-      bg_color = "#252518",
-      fg_color = "#c8b560",
+      bg_color = "#302c18",
+      fg_color = "#d4b840",
     },
     new_tab = {
-      bg_color = "#13130e",
-      fg_color = "#8a8470",
+      bg_color = "#1b1908",
+      fg_color = "#9a8d60",
     },
     new_tab_hover = {
-      bg_color = "#252518",
-      fg_color = "#d4a017",
+      bg_color = "#302c18",
+      fg_color = "#e8b312",
     },
   },
 
   -- ANSI colors (normal)
   ansi = {
-    "#2b2a22",  -- black:   dark olive-charcoal
-    "#c75646",  -- red:     muted warm red
-    "#8eb33b",  -- green:   citrus green (the key color)
-    "#d4a017",  -- yellow:  golden citrus (the hero accent)
-    "#6e98a4",  -- blue:    muted teal-blue complement
-    "#a87eb7",  -- magenta: soft lavender
-    "#5da58e",  -- cyan:    sage green
-    "#c8c2a8",  -- white:   warm ivory
+    "#352f1e",  -- black:   warm dark olive
+    "#d45a3a",  -- red:     blood orange
+    "#a0c428",  -- green:   lime zest
+    "#e8b312",  -- yellow:  ripe citrus gold (hero accent)
+    "#5a9eaf",  -- blue:    muted teal complement
+    "#b87ec7",  -- magenta: warm lavender
+    "#54b88a",  -- cyan:    key lime
+    "#d8cfaa",  -- white:   warm parchment
   },
 
   -- ANSI colors (bright)
   brights = {
-    "#4a4838",  -- bright black:   lighter olive
-    "#e09690",  -- bright red:     soft coral
-    "#b5cc72",  -- bright green:   light lime-citrus
-    "#f0d06e",  -- bright yellow:  bright lemon gold
-    "#93bdc4",  -- bright blue:    lighter teal
-    "#c4a8d1",  -- bright magenta: lighter lavender
-    "#83c5ae",  -- bright cyan:    light mint-sage
-    "#f0ead6",  -- bright white:   warm cream (matches fg)
+    "#564e35",  -- bright black:   golden olive
+    "#f08060",  -- bright red:     tangerine
+    "#c4e254",  -- bright green:   electric lime
+    "#ffd044",  -- bright yellow:  lemon burst
+    "#7ec0d0",  -- bright blue:    light teal
+    "#d4a2e0",  -- bright magenta: light orchid
+    "#78daa8",  -- bright cyan:    bright mint-lime
+    "#f2e8c9",  -- bright white:   warm cream (matches fg)
   },
 }
 
@@ -89,15 +89,4 @@ return {
     ["Citrus Neo"] = citrus_neo,
   },
   color_scheme = "Citrus Neo",
-
-  -- Optional: font and window settings that complement the theme
-  -- Uncomment and adjust to taste:
-  --
-  -- font = wezterm.font("SF Mono", { weight = "Regular" }),
-  -- font_size = 13.0,
-  -- line_height = 1.15,
-  -- window_background_opacity = 0.97,
-  -- macos_window_background_blur = 20,
-  -- window_decorations = "RESIZE",
-  -- window_padding = { left = 12, right = 12, top = 8, bottom = 8 },
 }
