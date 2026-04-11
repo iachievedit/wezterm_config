@@ -24,7 +24,7 @@ citrus_neo = {
   cursor_border = "#e8b312",
 
   -- Selection: warm amber tint
-  selection_bg = "#4a4225",
+  selection_bg = "#6b5a10",
   selection_fg = "#f2e8c9",
 
   -- Scrollbar thumb

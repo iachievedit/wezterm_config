@@ -16,11 +16,20 @@ config.font = wezterm.font_with_fallback {
   "Hack",
   "Fira Code",
 }
+config.warn_about_missing_glyphs = false
 config.automatically_reload_config = true
 config.initial_rows = 24
 config.initial_cols = 86
 
-config.window_background_opacity = 0.85
-config.macos_window_background_blur = 20
+config.window_background_gradient = {
+  orientation = "Vertical",
+  colors = {
+    "#120e05",  -- top: dark
+    "#3c3219",  -- middle: warm gold (lightest)
+    "#120e05",  -- bottom: dark
+  },
+  interpolation = "Linear",
+  blend = "Rgb",
+}
 
 return config
